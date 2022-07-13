@@ -18,7 +18,7 @@ def main():
     while True:
         item = get_item()
         bill += get_bill(item)
-        print(f"Total: ${bill}")
+        print("Total: $" + "%.3f" % bill)
 
 
 def get_bill(item):
