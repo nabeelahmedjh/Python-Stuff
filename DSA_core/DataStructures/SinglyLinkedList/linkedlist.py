@@ -110,15 +110,22 @@ class LL:
             itr = itr.next
         print("End")
     # Big TODO
+
     # def reverse(self):
-    #     itr = self.head
-    #     next_head = itr.next
-    #     while itr:
-    #         if
-    #         head = next_head
-    #         next_head = head.next
-    #         head.next = itr
-    #         itr = head
+    #     prev = Node(next=self.head)
+    #     curr = self.head
+    #     after = curr.next
+
+    #     while curr:
+    #         if after is None:
+    #             self.head = curr
+    #             self.head.next = prev
+    #             return
+
+    #         curr.next = prev
+    #         prev = curr
+    #         curr = after
+    #         after = curr.next
 
 
 def main():
@@ -138,6 +145,8 @@ def main():
     l.remove_index(3)
     l.print()
     print(l.len)
+    l.reverse()
+    l.print()
 
 
 if __name__ == "__main__":
